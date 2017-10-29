@@ -131,5 +131,31 @@ class WebserviceTests: XCTestCase {
         }
     }
     
+    func testSavePhrasesSuccessBlock() {
+        let validationExpectation = expectation(description: "Check for valid saved return")
+        let expectedSave = SavedJsonModel.init(status: true, description: "Saved Phrase Success")
+        
+        self.stubRequestFor(path: "phrase", jsonFile: "phrase_saved.json")
+        Webservice.shared.savePhrases(phraseId: "dummy", success: { (saved) in
+            XCTAssert(saved == expectedSave)
+            validationExpectation.fulfill()
+        }, failure: nil)
+        self.waitForRequestToFinish()
+    }
+    
+    func testSavePhrasesFailureBlock() {
+        let validationExpectation = expectation(description: "Error block with invalid Json")
+        self.stubRequestFor(path: "phrase", jsonFile: "invalid.json")
+        Webservice.shared.savePhrases(phraseId: "dummy", success: nil) { (error) in
+            validationExpectation.fulfill()
+        }
+        self.waitForRequestToFinish()
+    }
+    
+    func testSavePhrasesServerHealth() {
+        self.measure {
+            Webservice.shared.savePhrases(phraseId: "dummy", success: nil, failure: nil)
+        }
+    }
 }
 

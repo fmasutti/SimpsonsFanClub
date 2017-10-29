@@ -23,8 +23,10 @@
 		5B5E791D1FA67BAD0050425D /* invalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B5E791C1FA67BAD0050425D /* invalid.json */; };
 		5B5E791F1FA684620050425D /* PhraseJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E791E1FA684620050425D /* PhraseJsonModel.swift */; };
 		5B5E79201FA684620050425D /* PhraseJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E791E1FA684620050425D /* PhraseJsonModel.swift */; };
-		5B5E79221FA686B30050425D /* phrases.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B5E79211FA686B30050425D /* phrases.json */; };
 		5B5E79231FA686B30050425D /* phrases.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B5E79211FA686B30050425D /* phrases.json */; };
+		5B933DBA1FA69193000DE348 /* SavedJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B933DB91FA69193000DE348 /* SavedJsonModel.swift */; };
+		5B933DBB1FA69193000DE348 /* SavedJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B933DB91FA69193000DE348 /* SavedJsonModel.swift */; };
+		5B933DBD1FA6923C000DE348 /* phrase_saved.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B933DBC1FA6923C000DE348 /* phrase_saved.json */; };
 		97B41E217F8F88EE2B047109 /* Pods_FMSimpsonsFanClubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381D89B8537A389BDAF6F6B4 /* Pods_FMSimpsonsFanClubUITests.framework */; };
 		9CF88377606B156E4FF1A438 /* Pods_FMSimpsonsFanClub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A395CFA18F81A98D3970D8 /* Pods_FMSimpsonsFanClub.framework */; };
 		B412822A33400A1BD526FC2C /* Pods_FMSimpsonsFanClubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCEA5ADC8B27B2394CEA101 /* Pods_FMSimpsonsFanClubTests.framework */; };
@@ -72,6 +74,8 @@
 		5B5E791C1FA67BAD0050425D /* invalid.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = invalid.json; sourceTree = "<group>"; };
 		5B5E791E1FA684620050425D /* PhraseJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseJsonModel.swift; sourceTree = "<group>"; };
 		5B5E79211FA686B30050425D /* phrases.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = phrases.json; sourceTree = "<group>"; };
+		5B933DB91FA69193000DE348 /* SavedJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedJsonModel.swift; sourceTree = "<group>"; };
+		5B933DBC1FA6923C000DE348 /* phrase_saved.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = phrase_saved.json; sourceTree = "<group>"; };
 		84533D6D991CDA28C0B85EDF /* Pods-FMSimpsonsFanClub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMSimpsonsFanClub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FMSimpsonsFanClub/Pods-FMSimpsonsFanClub.debug.xcconfig"; sourceTree = "<group>"; };
 		8FCEA5ADC8B27B2394CEA101 /* Pods_FMSimpsonsFanClubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FMSimpsonsFanClubTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA9E04E6D4694AB94D912C7 /* Pods-FMSimpsonsFanClubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMSimpsonsFanClubTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FMSimpsonsFanClubTests/Pods-FMSimpsonsFanClubTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -183,6 +187,7 @@
 			children = (
 				5B5E790D1FA63F840050425D /* CharacterJsonModel.swift */,
 				5B5E791E1FA684620050425D /* PhraseJsonModel.swift */,
+				5B933DB91FA69193000DE348 /* SavedJsonModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 				5B5E791A1FA65D2A0050425D /* character_info.json */,
 				5B5E791C1FA67BAD0050425D /* invalid.json */,
 				5B5E79211FA686B30050425D /* phrases.json */,
+				5B933DBC1FA6923C000DE348 /* phrase_saved.json */,
 			);
 			path = stubJsonFiles;
 			sourceTree = "<group>";
@@ -355,7 +361,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B5E78E51FA631BE0050425D /* LaunchScreen.storyboard in Resources */,
-				5B5E79221FA686B30050425D /* phrases.json in Resources */,
 				5B5E78E21FA631BE0050425D /* Assets.xcassets in Resources */,
 				5B5E78E01FA631BE0050425D /* Main.storyboard in Resources */,
 			);
@@ -366,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B5E791D1FA67BAD0050425D /* invalid.json in Resources */,
+				5B933DBD1FA6923C000DE348 /* phrase_saved.json in Resources */,
 				5B5E79231FA686B30050425D /* phrases.json in Resources */,
 				5B5E791B1FA65D2A0050425D /* character_info.json in Resources */,
 				5B5E79161FA641CD0050425D /* characters.json in Resources */,
@@ -542,6 +548,7 @@
 				5B5E78DD1FA631BE0050425D /* ViewController.swift in Sources */,
 				5B5E78DB1FA631BE0050425D /* AppDelegate.swift in Sources */,
 				5B5E790B1FA63E6B0050425D /* Webservice.swift in Sources */,
+				5B933DBA1FA69193000DE348 /* SavedJsonModel.swift in Sources */,
 				5B5E791F1FA684620050425D /* PhraseJsonModel.swift in Sources */,
 				5B5E790E1FA63F840050425D /* CharacterJsonModel.swift in Sources */,
 			);
@@ -554,6 +561,7 @@
 				5B5E79111FA640180050425D /* WebserviceTests.swift in Sources */,
 				5B5E79191FA645710050425D /* Webservice.swift in Sources */,
 				5B5E79201FA684620050425D /* PhraseJsonModel.swift in Sources */,
+				5B933DBB1FA69193000DE348 /* SavedJsonModel.swift in Sources */,
 				5B5E790F1FA63F840050425D /* CharacterJsonModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

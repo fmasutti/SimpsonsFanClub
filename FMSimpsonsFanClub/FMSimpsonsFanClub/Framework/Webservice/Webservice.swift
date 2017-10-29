@@ -89,4 +89,31 @@ final class Webservice {
             }
         }
     }
+    
+    /**
+     * Async method that will save a favorite phrase at webservice.
+     *
+     * - Parameter phraseId: Id for the phrase that will define as favorite.
+     * - Parameter successBlock: The Block that will be called with success return from webservice, it contain the SavedJsonModel.
+     * - Parameter failureBlock: The Failure block is called if something went wrong durint this process. It return as well the "error".
+     */
+    func savePhrases(phraseId:String, success successBlock: ((SavedJsonModel) -> Void)?, failure failureBlock:((Error?) -> Void)?) {
+        let parameters = ["phraseId": phraseId]
+        Alamofire.request("\(self.baseURL)/\(self.environment)/user/phrase", method: .post, parameters: parameters).responseJSON { (response) in
+            guard let jsonData = response.data else {
+                failureBlock?(response.error)
+                return
+            }
+            do {
+                let jsonDecoder = JSONDecoder()
+                let saved: SavedJsonModel = try jsonDecoder.decode(SavedJsonModel.self, from: jsonData)
+                successBlock?(saved)
+            } catch {
+                failureBlock?(response.error)
+            }
+        }
+    }
 }
+
+
+
