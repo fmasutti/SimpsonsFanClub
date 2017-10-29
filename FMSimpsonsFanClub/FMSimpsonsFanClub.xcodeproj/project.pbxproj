@@ -14,6 +14,9 @@
 		5B5E78E51FA631BE0050425D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5E78E31FA631BE0050425D /* LaunchScreen.storyboard */; };
 		5B5E78F01FA631BE0050425D /* FMSimpsonsFanClubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E78EF1FA631BE0050425D /* FMSimpsonsFanClubTests.swift */; };
 		5B5E78FB1FA631BE0050425D /* FMSimpsonsFanClubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E78FA1FA631BE0050425D /* FMSimpsonsFanClubUITests.swift */; };
+		97B41E217F8F88EE2B047109 /* Pods_FMSimpsonsFanClubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381D89B8537A389BDAF6F6B4 /* Pods_FMSimpsonsFanClubUITests.framework */; };
+		9CF88377606B156E4FF1A438 /* Pods_FMSimpsonsFanClub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A395CFA18F81A98D3970D8 /* Pods_FMSimpsonsFanClub.framework */; };
+		B412822A33400A1BD526FC2C /* Pods_FMSimpsonsFanClubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCEA5ADC8B27B2394CEA101 /* Pods_FMSimpsonsFanClubTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		012250D617DECB8466F3A482 /* Pods-FMSimpsonsFanClubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMSimpsonsFanClubUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FMSimpsonsFanClubUITests/Pods-FMSimpsonsFanClubUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		018AB0476EBA0A940E73C59F /* Pods-FMSimpsonsFanClubUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMSimpsonsFanClubUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FMSimpsonsFanClubUITests/Pods-FMSimpsonsFanClubUITests.release.xcconfig"; sourceTree = "<group>"; };
+		381D89B8537A389BDAF6F6B4 /* Pods_FMSimpsonsFanClubUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FMSimpsonsFanClubUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C15A693FBA1CB6522AA4A4 /* Pods-FMSimpsonsFanClub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMSimpsonsFanClub.release.xcconfig"; path = "Pods/Target Support Files/Pods-FMSimpsonsFanClub/Pods-FMSimpsonsFanClub.release.xcconfig"; sourceTree = "<group>"; };
 		5B5E78D71FA631BE0050425D /* FMSimpsonsFanClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMSimpsonsFanClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5E78DA1FA631BE0050425D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B5E78DC1FA631BE0050425D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,11 @@
 		5B5E78F61FA631BE0050425D /* FMSimpsonsFanClubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMSimpsonsFanClubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5E78FA1FA631BE0050425D /* FMSimpsonsFanClubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMSimpsonsFanClubUITests.swift; sourceTree = "<group>"; };
 		5B5E78FC1FA631BE0050425D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84533D6D991CDA28C0B85EDF /* Pods-FMSimpsonsFanClub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMSimpsonsFanClub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FMSimpsonsFanClub/Pods-FMSimpsonsFanClub.debug.xcconfig"; sourceTree = "<group>"; };
+		8FCEA5ADC8B27B2394CEA101 /* Pods_FMSimpsonsFanClubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FMSimpsonsFanClubTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA9E04E6D4694AB94D912C7 /* Pods-FMSimpsonsFanClubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMSimpsonsFanClubTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FMSimpsonsFanClubTests/Pods-FMSimpsonsFanClubTests.release.xcconfig"; sourceTree = "<group>"; };
+		D0A395CFA18F81A98D3970D8 /* Pods_FMSimpsonsFanClub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FMSimpsonsFanClub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1440FB60C2B8D6E47034CD5 /* Pods-FMSimpsonsFanClubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMSimpsonsFanClubTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FMSimpsonsFanClubTests/Pods-FMSimpsonsFanClubTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CF88377606B156E4FF1A438 /* Pods_FMSimpsonsFanClub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B412822A33400A1BD526FC2C /* Pods_FMSimpsonsFanClubTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97B41E217F8F88EE2B047109 /* Pods_FMSimpsonsFanClubUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				5B5E78EE1FA631BE0050425D /* FMSimpsonsFanClubTests */,
 				5B5E78F91FA631BE0050425D /* FMSimpsonsFanClubUITests */,
 				5B5E78D81FA631BE0050425D /* Products */,
+				A2DD89CEA50C81DC6CC0F33A /* Pods */,
+				C2F231CA7906144090BA66A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +114,7 @@
 		5B5E78D91FA631BE0050425D /* FMSimpsonsFanClub */ = {
 			isa = PBXGroup;
 			children = (
+				5B5E79081FA63A1B0050425D /* Framework */,
 				5B5E78DA1FA631BE0050425D /* AppDelegate.swift */,
 				5B5E78DC1FA631BE0050425D /* ViewController.swift */,
 				5B5E78DE1FA631BE0050425D /* Main.storyboard */,
@@ -125,6 +143,44 @@
 			path = FMSimpsonsFanClubUITests;
 			sourceTree = "<group>";
 		};
+		5B5E79081FA63A1B0050425D /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				5B5E79091FA63A2A0050425D /* Webservice */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		5B5E79091FA63A2A0050425D /* Webservice */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Webservice;
+			sourceTree = "<group>";
+		};
+		A2DD89CEA50C81DC6CC0F33A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84533D6D991CDA28C0B85EDF /* Pods-FMSimpsonsFanClub.debug.xcconfig */,
+				50C15A693FBA1CB6522AA4A4 /* Pods-FMSimpsonsFanClub.release.xcconfig */,
+				E1440FB60C2B8D6E47034CD5 /* Pods-FMSimpsonsFanClubTests.debug.xcconfig */,
+				9FA9E04E6D4694AB94D912C7 /* Pods-FMSimpsonsFanClubTests.release.xcconfig */,
+				012250D617DECB8466F3A482 /* Pods-FMSimpsonsFanClubUITests.debug.xcconfig */,
+				018AB0476EBA0A940E73C59F /* Pods-FMSimpsonsFanClubUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C2F231CA7906144090BA66A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0A395CFA18F81A98D3970D8 /* Pods_FMSimpsonsFanClub.framework */,
+				8FCEA5ADC8B27B2394CEA101 /* Pods_FMSimpsonsFanClubTests.framework */,
+				381D89B8537A389BDAF6F6B4 /* Pods_FMSimpsonsFanClubUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B5E78FF1FA631BE0050425D /* Build configuration list for PBXNativeTarget "FMSimpsonsFanClub" */;
 			buildPhases = (
+				F6771870B45991205F67E5D9 /* [CP] Check Pods Manifest.lock */,
 				5B5E78D31FA631BE0050425D /* Sources */,
 				5B5E78D41FA631BE0050425D /* Frameworks */,
 				5B5E78D51FA631BE0050425D /* Resources */,
+				EB2A68158C519EADE97D9C6F /* [CP] Embed Pods Frameworks */,
+				69765A1A4E0DF4F2BB8575F7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B5E79021FA631BE0050425D /* Build configuration list for PBXNativeTarget "FMSimpsonsFanClubTests" */;
 			buildPhases = (
+				557E26C0A0C01EF6C7D7A241 /* [CP] Check Pods Manifest.lock */,
 				5B5E78E71FA631BE0050425D /* Sources */,
 				5B5E78E81FA631BE0050425D /* Frameworks */,
 				5B5E78E91FA631BE0050425D /* Resources */,
+				EE241143BBFD374133B35F84 /* [CP] Embed Pods Frameworks */,
+				EF043FF17A6ECF19442E3FB9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +229,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B5E79051FA631BE0050425D /* Build configuration list for PBXNativeTarget "FMSimpsonsFanClubUITests" */;
 			buildPhases = (
+				F7735E592139BE0A07C8F9FE /* [CP] Check Pods Manifest.lock */,
 				5B5E78F21FA631BE0050425D /* Sources */,
 				5B5E78F31FA631BE0050425D /* Frameworks */,
 				5B5E78F41FA631BE0050425D /* Resources */,
+				7E906750C30DE7C06890DF19 /* [CP] Embed Pods Frameworks */,
+				A3DE784DAC1CA926295EAD73 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +318,159 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		557E26C0A0C01EF6C7D7A241 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FMSimpsonsFanClubTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69765A1A4E0DF4F2BB8575F7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FMSimpsonsFanClub/Pods-FMSimpsonsFanClub-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E906750C30DE7C06890DF19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FMSimpsonsFanClubUITests/Pods-FMSimpsonsFanClubUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3DE784DAC1CA926295EAD73 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FMSimpsonsFanClubUITests/Pods-FMSimpsonsFanClubUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB2A68158C519EADE97D9C6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FMSimpsonsFanClub/Pods-FMSimpsonsFanClub-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FMSimpsonsFanClub/Pods-FMSimpsonsFanClub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE241143BBFD374133B35F84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FMSimpsonsFanClubTests/Pods-FMSimpsonsFanClubTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FMSimpsonsFanClubTests/Pods-FMSimpsonsFanClubTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF043FF17A6ECF19442E3FB9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FMSimpsonsFanClubTests/Pods-FMSimpsonsFanClubTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6771870B45991205F67E5D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FMSimpsonsFanClub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7735E592139BE0A07C8F9FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FMSimpsonsFanClubUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5B5E78D31FA631BE0050425D /* Sources */ = {
@@ -424,6 +642,7 @@
 		};
 		5B5E79001FA631BE0050425D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84533D6D991CDA28C0B85EDF /* Pods-FMSimpsonsFanClub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +658,7 @@
 		};
 		5B5E79011FA631BE0050425D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50C15A693FBA1CB6522AA4A4 /* Pods-FMSimpsonsFanClub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,8 +674,8 @@
 		};
 		5B5E79031FA631BE0050425D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1440FB60C2B8D6E47034CD5 /* Pods-FMSimpsonsFanClubTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V89KTJ3L55;
@@ -471,8 +691,8 @@
 		};
 		5B5E79041FA631BE0050425D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FA9E04E6D4694AB94D912C7 /* Pods-FMSimpsonsFanClubTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V89KTJ3L55;
@@ -488,8 +708,8 @@
 		};
 		5B5E79061FA631BE0050425D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 012250D617DECB8466F3A482 /* Pods-FMSimpsonsFanClubUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V89KTJ3L55;
 				INFOPLIST_FILE = FMSimpsonsFanClubUITests/Info.plist;
@@ -504,8 +724,8 @@
 		};
 		5B5E79071FA631BE0050425D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 018AB0476EBA0A940E73C59F /* Pods-FMSimpsonsFanClubUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V89KTJ3L55;
 				INFOPLIST_FILE = FMSimpsonsFanClubUITests/Info.plist;

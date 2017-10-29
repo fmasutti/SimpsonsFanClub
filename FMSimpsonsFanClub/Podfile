@@ -1,0 +1,18 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'FMSimpsonsFanClub' do
+  use_frameworks!
+	pod 'Alamofire', '~> 4.5.1'
+
+  target 'FMSimpsonsFanClubTests' do
+    inherit! :search_paths
+	pod 'OHHTTPStubs/Swift', '~> 6.0.0'
+
+  end
+
+  target 'FMSimpsonsFanClubUITests' do
+    inherit! :search_paths
+  end
+
+end
