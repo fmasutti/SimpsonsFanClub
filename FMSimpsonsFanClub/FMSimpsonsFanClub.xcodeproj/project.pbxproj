@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B5E78DB1FA631BE0050425D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E78DA1FA631BE0050425D /* AppDelegate.swift */; };
+		5B5E78DD1FA631BE0050425D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E78DC1FA631BE0050425D /* ViewController.swift */; };
+		5B5E78E01FA631BE0050425D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5E78DE1FA631BE0050425D /* Main.storyboard */; };
+		5B5E78E21FA631BE0050425D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5E78E11FA631BE0050425D /* Assets.xcassets */; };
+		5B5E78E51FA631BE0050425D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5E78E31FA631BE0050425D /* LaunchScreen.storyboard */; };
+		5B5E78F01FA631BE0050425D /* FMSimpsonsFanClubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E78EF1FA631BE0050425D /* FMSimpsonsFanClubTests.swift */; };
+		5B5E78FB1FA631BE0050425D /* FMSimpsonsFanClubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E78FA1FA631BE0050425D /* FMSimpsonsFanClubUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B5E78EC1FA631BE0050425D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B5E78CF1FA631BE0050425D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B5E78D61FA631BE0050425D;
+			remoteInfo = FMSimpsonsFanClub;
+		};
+		5B5E78F71FA631BE0050425D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B5E78CF1FA631BE0050425D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B5E78D61FA631BE0050425D;
+			remoteInfo = FMSimpsonsFanClub;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B5E78D71FA631BE0050425D /* FMSimpsonsFanClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMSimpsonsFanClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B5E78DA1FA631BE0050425D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B5E78DC1FA631BE0050425D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B5E78DF1FA631BE0050425D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B5E78E11FA631BE0050425D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B5E78E41FA631BE0050425D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B5E78E61FA631BE0050425D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B5E78EB1FA631BE0050425D /* FMSimpsonsFanClubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMSimpsonsFanClubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B5E78EF1FA631BE0050425D /* FMSimpsonsFanClubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMSimpsonsFanClubTests.swift; sourceTree = "<group>"; };
+		5B5E78F11FA631BE0050425D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B5E78F61FA631BE0050425D /* FMSimpsonsFanClubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMSimpsonsFanClubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B5E78FA1FA631BE0050425D /* FMSimpsonsFanClubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMSimpsonsFanClubUITests.swift; sourceTree = "<group>"; };
+		5B5E78FC1FA631BE0050425D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B5E78D41FA631BE0050425D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B5E78E81FA631BE0050425D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B5E78F31FA631BE0050425D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B5E78CE1FA631BE0050425D = {
+			isa = PBXGroup;
+			children = (
+				5B5E78D91FA631BE0050425D /* FMSimpsonsFanClub */,
+				5B5E78EE1FA631BE0050425D /* FMSimpsonsFanClubTests */,
+				5B5E78F91FA631BE0050425D /* FMSimpsonsFanClubUITests */,
+				5B5E78D81FA631BE0050425D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B5E78D81FA631BE0050425D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B5E78D71FA631BE0050425D /* FMSimpsonsFanClub.app */,
+				5B5E78EB1FA631BE0050425D /* FMSimpsonsFanClubTests.xctest */,
+				5B5E78F61FA631BE0050425D /* FMSimpsonsFanClubUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B5E78D91FA631BE0050425D /* FMSimpsonsFanClub */ = {
+			isa = PBXGroup;
+			children = (
+				5B5E78DA1FA631BE0050425D /* AppDelegate.swift */,
+				5B5E78DC1FA631BE0050425D /* ViewController.swift */,
+				5B5E78DE1FA631BE0050425D /* Main.storyboard */,
+				5B5E78E11FA631BE0050425D /* Assets.xcassets */,
+				5B5E78E31FA631BE0050425D /* LaunchScreen.storyboard */,
+				5B5E78E61FA631BE0050425D /* Info.plist */,
+			);
+			path = FMSimpsonsFanClub;
+			sourceTree = "<group>";
+		};
+		5B5E78EE1FA631BE0050425D /* FMSimpsonsFanClubTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B5E78EF1FA631BE0050425D /* FMSimpsonsFanClubTests.swift */,
+				5B5E78F11FA631BE0050425D /* Info.plist */,
+			);
+			path = FMSimpsonsFanClubTests;
+			sourceTree = "<group>";
+		};
+		5B5E78F91FA631BE0050425D /* FMSimpsonsFanClubUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5B5E78FA1FA631BE0050425D /* FMSimpsonsFanClubUITests.swift */,
+				5B5E78FC1FA631BE0050425D /* Info.plist */,
+			);
+			path = FMSimpsonsFanClubUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B5E78D61FA631BE0050425D /* FMSimpsonsFanClub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B5E78FF1FA631BE0050425D /* Build configuration list for PBXNativeTarget "FMSimpsonsFanClub" */;
+			buildPhases = (
+				5B5E78D31FA631BE0050425D /* Sources */,
+				5B5E78D41FA631BE0050425D /* Frameworks */,
+				5B5E78D51FA631BE0050425D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMSimpsonsFanClub;
+			productName = FMSimpsonsFanClub;
+			productReference = 5B5E78D71FA631BE0050425D /* FMSimpsonsFanClub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5B5E78EA1FA631BE0050425D /* FMSimpsonsFanClubTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B5E79021FA631BE0050425D /* Build configuration list for PBXNativeTarget "FMSimpsonsFanClubTests" */;
+			buildPhases = (
+				5B5E78E71FA631BE0050425D /* Sources */,
+				5B5E78E81FA631BE0050425D /* Frameworks */,
+				5B5E78E91FA631BE0050425D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B5E78ED1FA631BE0050425D /* PBXTargetDependency */,
+			);
+			name = FMSimpsonsFanClubTests;
+			productName = FMSimpsonsFanClubTests;
+			productReference = 5B5E78EB1FA631BE0050425D /* FMSimpsonsFanClubTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5B5E78F51FA631BE0050425D /* FMSimpsonsFanClubUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B5E79051FA631BE0050425D /* Build configuration list for PBXNativeTarget "FMSimpsonsFanClubUITests" */;
+			buildPhases = (
+				5B5E78F21FA631BE0050425D /* Sources */,
+				5B5E78F31FA631BE0050425D /* Frameworks */,
+				5B5E78F41FA631BE0050425D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B5E78F81FA631BE0050425D /* PBXTargetDependency */,
+			);
+			name = FMSimpsonsFanClubUITests;
+			productName = FMSimpsonsFanClubUITests;
+			productReference = 5B5E78F61FA631BE0050425D /* FMSimpsonsFanClubUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B5E78CF1FA631BE0050425D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Frantiesco Masutti";
+				TargetAttributes = {
+					5B5E78D61FA631BE0050425D = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					5B5E78EA1FA631BE0050425D = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5B5E78D61FA631BE0050425D;
+					};
+					5B5E78F51FA631BE0050425D = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5B5E78D61FA631BE0050425D;
+					};
+				};
+			};
+			buildConfigurationList = 5B5E78D21FA631BE0050425D /* Build configuration list for PBXProject "FMSimpsonsFanClub" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B5E78CE1FA631BE0050425D;
+			productRefGroup = 5B5E78D81FA631BE0050425D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B5E78D61FA631BE0050425D /* FMSimpsonsFanClub */,
+				5B5E78EA1FA631BE0050425D /* FMSimpsonsFanClubTests */,
+				5B5E78F51FA631BE0050425D /* FMSimpsonsFanClubUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B5E78D51FA631BE0050425D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B5E78E51FA631BE0050425D /* LaunchScreen.storyboard in Resources */,
+				5B5E78E21FA631BE0050425D /* Assets.xcassets in Resources */,
+				5B5E78E01FA631BE0050425D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B5E78E91FA631BE0050425D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B5E78F41FA631BE0050425D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B5E78D31FA631BE0050425D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B5E78DD1FA631BE0050425D /* ViewController.swift in Sources */,
+				5B5E78DB1FA631BE0050425D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B5E78E71FA631BE0050425D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B5E78F01FA631BE0050425D /* FMSimpsonsFanClubTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B5E78F21FA631BE0050425D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B5E78FB1FA631BE0050425D /* FMSimpsonsFanClubUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B5E78ED1FA631BE0050425D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B5E78D61FA631BE0050425D /* FMSimpsonsFanClub */;
+			targetProxy = 5B5E78EC1FA631BE0050425D /* PBXContainerItemProxy */;
+		};
+		5B5E78F81FA631BE0050425D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B5E78D61FA631BE0050425D /* FMSimpsonsFanClub */;
+			targetProxy = 5B5E78F71FA631BE0050425D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5B5E78DE1FA631BE0050425D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B5E78DF1FA631BE0050425D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5B5E78E31FA631BE0050425D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B5E78E41FA631BE0050425D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B5E78FD1FA631BE0050425D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B5E78FE1FA631BE0050425D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B5E79001FA631BE0050425D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V89KTJ3L55;
+				INFOPLIST_FILE = FMSimpsonsFanClub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coldmass.FMSimpsonsFanClub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B5E79011FA631BE0050425D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V89KTJ3L55;
+				INFOPLIST_FILE = FMSimpsonsFanClub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coldmass.FMSimpsonsFanClub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5B5E79031FA631BE0050425D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V89KTJ3L55;
+				INFOPLIST_FILE = FMSimpsonsFanClubTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coldmass.FMSimpsonsFanClubTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FMSimpsonsFanClub.app/FMSimpsonsFanClub";
+			};
+			name = Debug;
+		};
+		5B5E79041FA631BE0050425D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V89KTJ3L55;
+				INFOPLIST_FILE = FMSimpsonsFanClubTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coldmass.FMSimpsonsFanClubTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FMSimpsonsFanClub.app/FMSimpsonsFanClub";
+			};
+			name = Release;
+		};
+		5B5E79061FA631BE0050425D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V89KTJ3L55;
+				INFOPLIST_FILE = FMSimpsonsFanClubUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coldmass.FMSimpsonsFanClubUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FMSimpsonsFanClub;
+			};
+			name = Debug;
+		};
+		5B5E79071FA631BE0050425D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V89KTJ3L55;
+				INFOPLIST_FILE = FMSimpsonsFanClubUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coldmass.FMSimpsonsFanClubUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FMSimpsonsFanClub;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B5E78D21FA631BE0050425D /* Build configuration list for PBXProject "FMSimpsonsFanClub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B5E78FD1FA631BE0050425D /* Debug */,
+				5B5E78FE1FA631BE0050425D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B5E78FF1FA631BE0050425D /* Build configuration list for PBXNativeTarget "FMSimpsonsFanClub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B5E79001FA631BE0050425D /* Debug */,
+				5B5E79011FA631BE0050425D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B5E79021FA631BE0050425D /* Build configuration list for PBXNativeTarget "FMSimpsonsFanClubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B5E79031FA631BE0050425D /* Debug */,
+				5B5E79041FA631BE0050425D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B5E79051FA631BE0050425D /* Build configuration list for PBXNativeTarget "FMSimpsonsFanClubUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B5E79061FA631BE0050425D /* Debug */,
+				5B5E79071FA631BE0050425D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B5E78CF1FA631BE0050425D /* Project object */;
+}
