@@ -103,5 +103,33 @@ class WebserviceTests: XCTestCase {
         }
     }
     
+    func testGetCharacterPhrasesSuccessBlock() {
+        let validationExpectation = expectation(description: "Return error block with invalid Json")
+        let expectedPhrase = PhraseJsonModel.init(phrase: "Now we play the waiting game…Ahh, the waiting game sucks. Let’s play Hungry Hungry Hippos!", character: "59edee68706374dfa957842f", _id: "59edff6492d619b4a933a56b")
+        
+        self.stubRequestFor(path: "phrases", jsonFile: "phrases.json")
+        Webservice.shared.getCharacterPhrases(characterId: "dummy", success: { (phrases) in
+            XCTAssert(phrases.count == 2)
+            XCTAssert(phrases.last! == expectedPhrase)
+            validationExpectation.fulfill()
+        }, failure: nil)
+        self.waitForRequestToFinish()
+    }
+    
+    func testGetCharacterPhrasesFailureBlock() {
+        let validationExpectation = expectation(description: "Return error block with invalid Json")
+        self.stubRequestFor(path: "phrases", jsonFile: "invalid.json")
+        Webservice.shared.getCharacterPhrases(characterId: "characterId", success: nil) { (error) in
+            validationExpectation.fulfill()
+        }
+        self.waitForRequestToFinish()
+    }
+    
+    func testGetCharacterPhrasesServerHealth() {
+        self.measure {
+            Webservice.shared.getCharacterPhrases(characterId: "59edee68706374dfa957842f", success: nil, failure: nil)
+        }
+    }
+    
 }
 

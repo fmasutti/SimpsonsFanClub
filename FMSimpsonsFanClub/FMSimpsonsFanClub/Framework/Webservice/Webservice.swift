@@ -66,6 +66,27 @@ final class Webservice {
             }
         }
     }
-
+    
+    /**
+     * Async method that will get phrases from respective character id
+     *
+     * - Parameter characterId: Id for the character that will be looking for phrases.
+     * - Parameter successBlock: The Block that will be called with success return from webservice, it contain the PhraseJsonModel array.
+     * - Parameter failureBlock: The Failure block is called if something went wrong durint this process. It return as well the "error".
+     */
+    public func getCharacterPhrases(characterId:String, success successBlock: (([PhraseJsonModel]) -> Void)?, failure failureBlock:((Error?) -> Void)?) {
+        Alamofire.request("\(self.baseURL)/\(self.environment)/simpsons/\(characterId)/phrases").responseJSON { (response) in
+            guard let jsonData = response.data else {
+                failureBlock?(response.error)
+                return
+            }
+            do {
+                let jsonDecoder = JSONDecoder()
+                let characters: [PhraseJsonModel] = try jsonDecoder.decode([PhraseJsonModel].self, from: jsonData)
+                successBlock?(characters)
+            } catch {
+                failureBlock?(response.error)
+            }
+        }
+    }
 }
-
