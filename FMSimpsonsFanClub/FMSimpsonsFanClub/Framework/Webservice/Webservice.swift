@@ -59,8 +59,12 @@ final class Webservice {
             }
             do {
                 let jsonDecoder = JSONDecoder()
-                let characters: CharacterModel = try jsonDecoder.decode(CharacterModel.self, from: jsonData)
-                successBlock?(characters)
+                let character: CharacterModel = try jsonDecoder.decode(CharacterModel.self, from: jsonData)
+                if character._id != nil {
+                    successBlock?(character)
+                }else {
+                    failureBlock?(response.error)
+                }
             } catch {
                 failureBlock?(response.error)
             }
@@ -99,7 +103,8 @@ final class Webservice {
      */
     func savePhrases(phraseId:String, success successBlock: ((SavedModel) -> Void)?, failure failureBlock:((Error?) -> Void)?) {
         let parameters = ["phraseId": phraseId]
-        Alamofire.request("\(self.baseURL)/\(self.environment)/user/phrase", method: .post, parameters: parameters).responseJSON { (response) in
+        let url = "\(self.baseURL)/\(self.environment)/user/phrase"
+        Alamofire.request(url, method: .post, parameters: parameters).responseJSON { (response) in
             guard let jsonData = response.data else {
                 failureBlock?(response.error)
                 return
@@ -109,6 +114,29 @@ final class Webservice {
                 let saved: SavedModel = try jsonDecoder.decode(SavedModel.self, from: jsonData)
                 successBlock?(saved)
             } catch {
+                failureBlock?(response.error)
+            }
+        }
+    }
+    
+    
+    /**
+     * Async method that will Download a respective URL image.
+     *
+     * - Parameter imagePath: Path for the image that will  be downloaded.
+     * - Parameter successBlock: The Block that will be called with success return from webservice, it contain the UIImage.
+     * - Parameter failureBlock: The Failure block is called if something went wrong durint this process. It return as well the "error".
+     */
+    
+    func downloadImage(imagePath: String, successBlock: ((UIImage) -> Void)?, failure failureBlock:((Error?) -> Void)?) {
+        Alamofire.request(imagePath).responseData { (response) in
+            guard let imageData = response.data else {
+                failureBlock?(response.error)
+                return
+            }
+            if let image = UIImage(data: imageData) {
+                successBlock?(image)
+            }else {
                 failureBlock?(response.error)
             }
         }

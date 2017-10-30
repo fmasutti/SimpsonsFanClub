@@ -12,6 +12,7 @@ class CharactersViewController: UIViewController {
     
     var charactersVM: CharactersViewModel = CharactersViewModel()
     @IBOutlet weak var characterTableView: UITableView!
+    var selectedCharacter: CharacterViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,11 @@ class CharactersViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! CharacterDetailsViewController
+        vc.selectedCharacter = self.selectedCharacter
+    }
+    
 }
 
 // UITableView extension for ViewController
@@ -53,6 +59,12 @@ extension CharactersViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        selectedCharacter = self.charactersVM.characters[indexPath.row]
+        performSegue(withIdentifier: CharacterDetailsViewController.viewControllerIdentifier, sender: self)
     }
     
 }
