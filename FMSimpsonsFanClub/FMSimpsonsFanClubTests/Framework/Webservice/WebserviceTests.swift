@@ -51,7 +51,7 @@ class WebserviceTests: XCTestCase {
     
     func testGetCharactersSuccessBlock() {
         let validationExpectation = expectation(description: "Check if return valid character list from 'character_info.json'")
-        let expectedCharacterInfo = CharacterJsonModel(firstName: "Moe", lastName: "Sizlack", _id: "59edee68ea392a3947485d41", picture: nil)
+        let expectedCharacterInfo = CharacterModel(firstName: "Moe", lastName: "Sizlack", _id: "59edee68ea392a3947485d41", picture: nil)
         self.stubRequestFor(path: "/simpsons", jsonFile: "characters.json")
         Webservice.shared.getCharacters(success: { (characters) in
             XCTAssert(characters.count == 1)
@@ -78,7 +78,7 @@ class WebserviceTests: XCTestCase {
     
     func testGetCharacterInfoSuccessBlock() {
         let expect = expectation(description: "Compare mocked character and 'character_info.json'")
-        let expectedCharacterInfo = CharacterJsonModel(firstName: "Homer", lastName: "Simpson", _id: "59edee68706374dfa957842f", picture: "http://www.trbimg.com/img-573a089a/turbine/ct-homer-simpson-live-pizza-debate-met-0517-20160516")
+        let expectedCharacterInfo = CharacterModel(firstName: "Homer", lastName: "Simpson", _id: "59edee68706374dfa957842f", picture: "http://www.trbimg.com/img-573a089a/turbine/ct-homer-simpson-live-pizza-debate-met-0517-20160516")
         self.stubRequestFor(path: expectedCharacterInfo._id, jsonFile: "character_info.json")
         
         Webservice.shared.getCharacterInfo(characterId: expectedCharacterInfo._id, success: { (character) in
@@ -105,7 +105,7 @@ class WebserviceTests: XCTestCase {
     
     func testGetCharacterPhrasesSuccessBlock() {
         let validationExpectation = expectation(description: "Return error block with invalid Json")
-        let expectedPhrase = PhraseJsonModel.init(phrase: "Now we play the waiting game…Ahh, the waiting game sucks. Let’s play Hungry Hungry Hippos!", character: "59edee68706374dfa957842f", _id: "59edff6492d619b4a933a56b")
+        let expectedPhrase = PhraseModel.init(phrase: "Now we play the waiting game…Ahh, the waiting game sucks. Let’s play Hungry Hungry Hippos!", character: "59edee68706374dfa957842f", _id: "59edff6492d619b4a933a56b")
         
         self.stubRequestFor(path: "phrases", jsonFile: "phrases.json")
         Webservice.shared.getCharacterPhrases(characterId: "dummy", success: { (phrases) in
@@ -133,7 +133,7 @@ class WebserviceTests: XCTestCase {
     
     func testSavePhrasesSuccessBlock() {
         let validationExpectation = expectation(description: "Check for valid saved return")
-        let expectedSave = SavedJsonModel.init(status: true, description: "Saved Phrase Success")
+        let expectedSave = SavedModel.init(status: true, description: "Saved Phrase Success")
         
         self.stubRequestFor(path: "phrase", jsonFile: "phrase_saved.json")
         Webservice.shared.savePhrases(phraseId: "dummy", success: { (saved) in

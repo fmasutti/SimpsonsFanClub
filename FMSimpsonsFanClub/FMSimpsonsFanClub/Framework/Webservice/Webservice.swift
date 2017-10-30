@@ -28,7 +28,7 @@ final class Webservice {
      * - Parameter successBlock: The Block that will be called with success return from webservice, it contain as well a list with all characters founded.
      * - Parameter failureBlock: The Failure block is called if something went wrong durint this process. It return as well the "error".
      */
-    public func getCharacters(success successBlock: (([CharacterJsonModel]) -> Void)?, failure failureBlock: ((Error?) -> Void)?) {
+    public func getCharacters(success successBlock: (([CharacterModel]) -> Void)?, failure failureBlock: ((Error?) -> Void)?) {
         Alamofire.request("\( self.baseURL)/\(self.environment)/simpsons/").responseJSON { (response) in
             guard let jsonData = response.data else {
                 failureBlock?(response.error)
@@ -36,7 +36,7 @@ final class Webservice {
             }
             do {
                 let jsonDecoder = JSONDecoder()
-                let characters: [CharacterJsonModel] = try jsonDecoder.decode([CharacterJsonModel].self, from: jsonData)
+                let characters: [CharacterModel] = try jsonDecoder.decode([CharacterModel].self, from: jsonData)
                 successBlock?(characters)
             } catch {
                 failureBlock?(response.error)
@@ -51,7 +51,7 @@ final class Webservice {
      * - Parameter successBlock: The Block that will be called with success return from webservice, it contain the CharacterModel.
      * - Parameter failureBlock: The Failure block is called if something went wrong durint this process. It return as well the "error".
      */
-    public func getCharacterInfo(characterId:String, success successBlock: ((CharacterJsonModel) -> Void)?, failure failureBlock: ((Error?) -> Void)?) {
+    public func getCharacterInfo(characterId:String, success successBlock: ((CharacterModel) -> Void)?, failure failureBlock: ((Error?) -> Void)?) {
         Alamofire.request("\(self.baseURL)/\(self.environment)/simpsons/\(characterId)").responseJSON { (response) in
             guard let jsonData = response.data else {
                 failureBlock?(response.error)
@@ -59,7 +59,7 @@ final class Webservice {
             }
             do {
                 let jsonDecoder = JSONDecoder()
-                let characters: CharacterJsonModel = try jsonDecoder.decode(CharacterJsonModel.self, from: jsonData)
+                let characters: CharacterModel = try jsonDecoder.decode(CharacterModel.self, from: jsonData)
                 successBlock?(characters)
             } catch {
                 failureBlock?(response.error)
@@ -74,7 +74,7 @@ final class Webservice {
      * - Parameter successBlock: The Block that will be called with success return from webservice, it contain the PhraseJsonModel array.
      * - Parameter failureBlock: The Failure block is called if something went wrong durint this process. It return as well the "error".
      */
-    public func getCharacterPhrases(characterId:String, success successBlock: (([PhraseJsonModel]) -> Void)?, failure failureBlock:((Error?) -> Void)?) {
+    public func getCharacterPhrases(characterId:String, success successBlock: (([PhraseModel]) -> Void)?, failure failureBlock:((Error?) -> Void)?) {
         Alamofire.request("\(self.baseURL)/\(self.environment)/simpsons/\(characterId)/phrases").responseJSON { (response) in
             guard let jsonData = response.data else {
                 failureBlock?(response.error)
@@ -82,7 +82,7 @@ final class Webservice {
             }
             do {
                 let jsonDecoder = JSONDecoder()
-                let characters: [PhraseJsonModel] = try jsonDecoder.decode([PhraseJsonModel].self, from: jsonData)
+                let characters: [PhraseModel] = try jsonDecoder.decode([PhraseModel].self, from: jsonData)
                 successBlock?(characters)
             } catch {
                 failureBlock?(response.error)
@@ -97,7 +97,7 @@ final class Webservice {
      * - Parameter successBlock: The Block that will be called with success return from webservice, it contain the SavedJsonModel.
      * - Parameter failureBlock: The Failure block is called if something went wrong durint this process. It return as well the "error".
      */
-    func savePhrases(phraseId:String, success successBlock: ((SavedJsonModel) -> Void)?, failure failureBlock:((Error?) -> Void)?) {
+    func savePhrases(phraseId:String, success successBlock: ((SavedModel) -> Void)?, failure failureBlock:((Error?) -> Void)?) {
         let parameters = ["phraseId": phraseId]
         Alamofire.request("\(self.baseURL)/\(self.environment)/user/phrase", method: .post, parameters: parameters).responseJSON { (response) in
             guard let jsonData = response.data else {
@@ -106,7 +106,7 @@ final class Webservice {
             }
             do {
                 let jsonDecoder = JSONDecoder()
-                let saved: SavedJsonModel = try jsonDecoder.decode(SavedJsonModel.self, from: jsonData)
+                let saved: SavedModel = try jsonDecoder.decode(SavedModel.self, from: jsonData)
                 successBlock?(saved)
             } catch {
                 failureBlock?(response.error)
