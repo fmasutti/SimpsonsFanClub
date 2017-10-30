@@ -136,9 +136,9 @@
 		5B5E78D91FA631BE0050425D /* FMSimpsonsFanClub */ = {
 			isa = PBXGroup;
 			children = (
+				5B874AB61FA758BE0051CF36 /* ViewControllers */,
 				5B5E79081FA63A1B0050425D /* Framework */,
 				5B5E78DA1FA631BE0050425D /* AppDelegate.swift */,
-				5B5E78DC1FA631BE0050425D /* ViewController.swift */,
 				5B5E78DE1FA631BE0050425D /* Main.storyboard */,
 				5B5E78E11FA631BE0050425D /* Assets.xcassets */,
 				5B5E78E31FA631BE0050425D /* LaunchScreen.storyboard */,
@@ -219,6 +219,14 @@
 				5B933DBC1FA6923C000DE348 /* phrase_saved.json */,
 			);
 			path = stubJsonFiles;
+			sourceTree = "<group>";
+		};
+		5B874AB61FA758BE0051CF36 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B5E78DC1FA631BE0050425D /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		A2DD89CEA50C81DC6CC0F33A /* Pods */ = {
